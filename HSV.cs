@@ -1,8 +1,9 @@
 using System;
 using System.Drawing;
 
+#pragma warning disable 0660, 0661
 namespace ProgressODoom {
-	public struct HSV {
+    public struct HSV {
 		private int hue;
 		private int sat;
 		private int val;
@@ -186,3 +187,4 @@ namespace ProgressODoom {
 		}
 	}
 }
+#pragma warning restore

@@ -78,6 +78,8 @@ namespace ProgressODoom {
 		}
 
 		private void RepaintImage(Rectangle box) {
+            if (box.Width <= 0) box.Width = 1;
+            if (box.Height <= 0) box.Height = 1;
 			Bitmap source = BuildTile(box.Width);
 			img = new Bitmap(box.Width, box.Height);
 			using (Graphics g = Graphics.FromImage(img)) {

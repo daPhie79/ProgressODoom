@@ -23,7 +23,7 @@ namespace ProgressODoom {
 		#endregion
 
 		#region Pens & Brushes
-		private Pen border;
+		new private Pen border; // fix?
 		private Pen backtop;
 		private Brush back;
 
